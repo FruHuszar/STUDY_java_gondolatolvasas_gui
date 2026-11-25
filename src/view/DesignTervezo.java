@@ -26,18 +26,207 @@ public class DesignTervezo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnBezaras = new javax.swing.JButton();
+        btnUjJatek = new javax.swing.JButton();
+        pnlLayout = new javax.swing.JPanel();
+        pnlLayoutBal = new javax.swing.JPanel();
+        lblMelyik = new javax.swing.JLabel();
+        pnlKartyak = new javax.swing.JPanel();
+        txf1 = new javax.swing.JTextField();
+        txf2 = new javax.swing.JTextField();
+        txf3 = new javax.swing.JTextField();
+        txf4 = new javax.swing.JTextField();
+        txf5 = new javax.swing.JTextField();
+        txf6 = new javax.swing.JTextField();
+        txf7 = new javax.swing.JTextField();
+        txf8 = new javax.swing.JTextField();
+        txf9 = new javax.swing.JTextField();
+        txf10 = new javax.swing.JTextField();
+        txf11 = new javax.swing.JTextField();
+        txf12 = new javax.swing.JTextField();
+        txf13 = new javax.swing.JTextField();
+        txf14 = new javax.swing.JTextField();
+        txf15 = new javax.swing.JTextField();
+        txf16 = new javax.swing.JTextField();
+        txf17 = new javax.swing.JTextField();
+        txf18 = new javax.swing.JTextField();
+        txf19 = new javax.swing.JTextField();
+        txf20 = new javax.swing.JTextField();
+        txf21 = new javax.swing.JTextField();
+        btnOszlop1 = new javax.swing.JButton();
+        btnOszlop2 = new javax.swing.JButton();
+        btnOszlop3 = new javax.swing.JButton();
+        pnlLayoutJobb = new javax.swing.JPanel();
+        lblKartyad = new javax.swing.JLabel();
+        txfKitalalt = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gondolat Olvasó Program");
+        setPreferredSize(new java.awt.Dimension(530, 400));
+
+        btnBezaras.setText("Bezárás");
+
+        btnUjJatek.setText("Új Játék");
+
+        pnlLayout.setLayout(new java.awt.GridLayout(1, 2, 30, 0));
+
+        pnlLayoutBal.setLayout(new javax.swing.BoxLayout(pnlLayoutBal, javax.swing.BoxLayout.Y_AXIS));
+
+        lblMelyik.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblMelyik.setLabelFor(pnlKartyak);
+        lblMelyik.setText("Melyik oszlopban van a kártyád?");
+        lblMelyik.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        pnlLayoutBal.add(lblMelyik);
+
+        pnlKartyak.setLayout(new java.awt.GridLayout(8, 3, 2, 1));
+
+        txf1.setEditable(false);
+        txf1.setText("A0");
+        pnlKartyak.add(txf1);
+
+        txf2.setEditable(false);
+        txf2.setText("A0");
+        pnlKartyak.add(txf2);
+
+        txf3.setEditable(false);
+        txf3.setText("A0");
+        pnlKartyak.add(txf3);
+
+        txf4.setEditable(false);
+        txf4.setText("A0");
+        pnlKartyak.add(txf4);
+
+        txf5.setEditable(false);
+        txf5.setText("A0");
+        pnlKartyak.add(txf5);
+
+        txf6.setEditable(false);
+        txf6.setText("A0");
+        pnlKartyak.add(txf6);
+
+        txf7.setEditable(false);
+        txf7.setText("A0");
+        pnlKartyak.add(txf7);
+
+        txf8.setEditable(false);
+        txf8.setText("A0");
+        pnlKartyak.add(txf8);
+
+        txf9.setEditable(false);
+        txf9.setText("A0");
+        pnlKartyak.add(txf9);
+
+        txf10.setEditable(false);
+        txf10.setText("A0");
+        pnlKartyak.add(txf10);
+
+        txf11.setEditable(false);
+        txf11.setText("A0");
+        pnlKartyak.add(txf11);
+
+        txf12.setEditable(false);
+        txf12.setText("A0");
+        pnlKartyak.add(txf12);
+
+        txf13.setEditable(false);
+        txf13.setText("A0");
+        pnlKartyak.add(txf13);
+
+        txf14.setEditable(false);
+        txf14.setText("A0");
+        pnlKartyak.add(txf14);
+
+        txf15.setEditable(false);
+        txf15.setText("A0");
+        pnlKartyak.add(txf15);
+
+        txf16.setEditable(false);
+        txf16.setText("A0");
+        pnlKartyak.add(txf16);
+
+        txf17.setEditable(false);
+        txf17.setText("A0");
+        pnlKartyak.add(txf17);
+
+        txf18.setEditable(false);
+        txf18.setText("A0");
+        pnlKartyak.add(txf18);
+
+        txf19.setEditable(false);
+        txf19.setText("A0");
+        pnlKartyak.add(txf19);
+
+        txf20.setEditable(false);
+        txf20.setText("A0");
+        pnlKartyak.add(txf20);
+
+        txf21.setEditable(false);
+        txf21.setText("A0");
+        pnlKartyak.add(txf21);
+
+        btnOszlop1.setText("1");
+        pnlKartyak.add(btnOszlop1);
+
+        btnOszlop2.setText("2");
+        pnlKartyak.add(btnOszlop2);
+
+        btnOszlop3.setText("3");
+        pnlKartyak.add(btnOszlop3);
+
+        pnlLayoutBal.add(pnlKartyak);
+
+        pnlLayout.add(pnlLayoutBal);
+
+        pnlLayoutJobb.setLayout(new javax.swing.BoxLayout(pnlLayoutJobb, javax.swing.BoxLayout.Y_AXIS));
+
+        lblKartyad.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblKartyad.setLabelFor(txfKitalalt);
+        lblKartyad.setText("A kártya amire gondoltál:");
+        lblKartyad.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        pnlLayoutJobb.add(lblKartyad);
+
+        txfKitalalt.setEditable(false);
+        txfKitalalt.setText("A0");
+        pnlLayoutJobb.add(txfKitalalt);
+
+        pnlLayout.add(pnlLayoutJobb);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setText("Gondolj Egy Kártyára");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 720, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(142, 142, 142)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(54, 54, 54)
+                            .addComponent(pnlLayout, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(81, 81, 81)
+                            .addComponent(btnUjJatek)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(btnBezaras))))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 350, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(pnlLayout, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBezaras)
+                    .addComponent(btnUjJatek))
+                .addGap(29, 29, 29))
         );
 
         pack();
@@ -80,5 +269,39 @@ public class DesignTervezo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBezaras;
+    private javax.swing.JButton btnOszlop1;
+    private javax.swing.JButton btnOszlop2;
+    private javax.swing.JButton btnOszlop3;
+    private javax.swing.JButton btnUjJatek;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblKartyad;
+    private javax.swing.JLabel lblMelyik;
+    private javax.swing.JPanel pnlKartyak;
+    private javax.swing.JPanel pnlLayout;
+    private javax.swing.JPanel pnlLayoutBal;
+    private javax.swing.JPanel pnlLayoutJobb;
+    private javax.swing.JTextField txf1;
+    private javax.swing.JTextField txf10;
+    private javax.swing.JTextField txf11;
+    private javax.swing.JTextField txf12;
+    private javax.swing.JTextField txf13;
+    private javax.swing.JTextField txf14;
+    private javax.swing.JTextField txf15;
+    private javax.swing.JTextField txf16;
+    private javax.swing.JTextField txf17;
+    private javax.swing.JTextField txf18;
+    private javax.swing.JTextField txf19;
+    private javax.swing.JTextField txf2;
+    private javax.swing.JTextField txf20;
+    private javax.swing.JTextField txf21;
+    private javax.swing.JTextField txf3;
+    private javax.swing.JTextField txf4;
+    private javax.swing.JTextField txf5;
+    private javax.swing.JTextField txf6;
+    private javax.swing.JTextField txf7;
+    private javax.swing.JTextField txf8;
+    private javax.swing.JTextField txf9;
+    private javax.swing.JTextField txfKitalalt;
     // End of variables declaration//GEN-END:variables
 }
