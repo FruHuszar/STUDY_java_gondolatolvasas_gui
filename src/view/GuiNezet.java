@@ -1,10 +1,19 @@
 package view;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author HuszárFruzsinaAnna(S
  */
-public class GuiNezet {
+public class GuiNezet extends JFrame {
+
+    public GuiNezet() {
+        // Most a java GUIval összerakott próba JFrame-et hívom meg, amíg nincs befejezve a GuiNezet osztály.
+        // Nem funkcionális, nem csinál semmit, de látszik rajta a design, layout, és tudtam vele tesztelni hogy a vezerlo és program helyesen meghívja
+        new DesignTervezo().setVisible(true);
+    }
+    
     /* Eredeti program idetartozó része áthelyezve:
     
     //Indoklás: Kirak = megjelenítés
