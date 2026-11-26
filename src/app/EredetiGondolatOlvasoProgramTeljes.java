@@ -73,37 +73,42 @@ public class EredetiGondolatOlvasoProgramTeljes {
      */
     public static void kever(int oszlop) {
         String[] uj = new String[22];
-        switch(oszlop){
-            case 1:
-                for (int i = 1; i <= 7; i++) {
-                    uj[i] = pakli[ 20-(i-1)*3];
-                    uj[i+7] = pakli[ 19-(i-1)*3];
-                    uj[i+14] = pakli[ 21-(i-1)*3];
-                }
-                break;
-            case 2:
-                for (int i = 1; i <= 7; i++) {
-                    uj[i] = pakli[ 19-(i-1)*3];
-                    uj[i+7] = pakli[ 20-(i-1)*3];
-                    uj[i+14] = pakli[ 21-(i-1)*3];
-                }
-                break;
-            case 3:
-                for (int i = 1; i <= 7; i++) {
-                    uj[i] = pakli[ 21-(i-1)*3];
-                    uj[i+7] = pakli[ 19-(i-1)*3];
-                    uj[i+14] = pakli[ 20-(i-1)*3];
-                }
-                break;
+        
+        for (int i = 1; i <= 7; i++) {
+            
+            String oszlop1 = pakli[1 + (i - 1) * 3];
+            String oszlop2 = pakli[2 + (i - 1) * 3];
+            String oszlop3 = pakli[3 + (i - 1) * 3];
+
+            switch (oszlop) {
+                case 1:
+                    // 2. oszlop felül, 1. oszlop középen, 3. oszlop alul
+                    uj[i]      = oszlop2;
+                    uj[i + 7]  = oszlop1;
+                    uj[i + 14] = oszlop3;
+                    break;
+                case 2:
+                    // 1. oszlop felül, 2. oszlop középen, 3. oszlop alul
+                    uj[i]      = oszlop1;
+                    uj[i + 7]  = oszlop2;
+                    uj[i + 14] = oszlop3;
+                    break;
+                case 3:
+                    // 1. oszlop felül, 3. oszlop középen, 2. oszlop alul
+                    uj[i]      = oszlop1;
+                    uj[i + 7]  = oszlop3;
+                    uj[i + 14] = oszlop2;
+                    break;
+            }
         }
+        
         pakli = uj;
     }
-
     /**
      * visszaadjuk a középső lapot, ami 21 elemnél a [11]
      */
     public static String ezVolt() {
-        //System.out.println("A választott lap: " + pakli[11]);
+        System.out.println("A választott lap: " + pakli[11]);
         return pakli[11];
     }
 }

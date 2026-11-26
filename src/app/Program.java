@@ -1,6 +1,7 @@
 package app;
 
 import controller.Vezerlo;
+import javax.swing.SwingUtilities;
 import model.PakliModel;
 import view.GuiNezet;
 
@@ -10,9 +11,14 @@ import view.GuiNezet;
  */
 public class Program {
     public static void main(String[] args) {
-        GuiNezet gn = new GuiNezet();
-        PakliModel m = new PakliModel();
-        
-        Vezerlo v = new Vezerlo(m,gn);
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                PakliModel modell = new PakliModel();
+                GuiNezet nezet = new GuiNezet();
+                new Vezerlo(modell, nezet);
+                nezet.setVisible(true);
+            }
+        });
     }
 }
